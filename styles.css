@@ -4,7 +4,7 @@
     --font: "JetBrains Mono NFP";
 }
 
-/* ---------- THEME: Catppuccin Custom BlackBar  ---------- */
+/* ---------- THEME: Catppuccin black background  ---------- */
 :root {
     --background: #000000;
     --text: #FFFFFF;
@@ -37,7 +37,7 @@
 /* ---------- THEME: Gruvbox Dark ---------- */
 /*
 :root {
-    --background: #1d2021;
+    --background: #1e1e1e;
     --text: #ebdbb2;
     --text-empty: #3c3836;
     --text-populated: #a89984;
@@ -220,100 +220,8 @@
     --gallery-bg: rgba(50, 48, 47, 0.01);
 }
 
-/* ---------- THEME: Your Lie In April ---------- */
-/*
-:root {
-    --background: #223343;
-    --text: #b7c2e9;
-    --text-empty: #314d6b;
-    --text-populated: #a5adcb;
-    --accent: #657c9f;
-    --accent-text: #b7c2e9;
-    --blue: #657c9f;
-    --mauve: #657c9f;
-    --surface0: #314d6b;
-    --surface1: #657c9f;
-    --subtext0: #a5adcb;
-    --overlay0: #657c9f;
-    --red: #7b7193;
-    --yellow: #657c9f;
-    --maroon: #7b7193;
-    --btn: #a5adcb;
-    --btn-hover: #b7c2e9;
-    --btn-disabled: #657c9f;
-    --media-artist: #a5adcb;
-    --playback-time: #a5adcb;
-    --progress: #b7c2e9;
-    --source-bg: #657c9f;
-    --popup-bg: rgba(34, 51, 67, 0.7);
-    --media-bg: rgba(34, 51, 67, 0.6);
-    --gallery-bg-dark: rgba(34, 51, 67, 0.8);
-    --gallery-bg: rgba(34, 51, 67, 0.01);
-}
 
-/* ---------- THEME: Sousou no Frieren ---------- */
-/*
-:root {
-    --background: #d4ddd0;
-    --text: #1d2837;
-    --text-empty: #A1B99C;
-    --text-populated: #2B4E55;
-    --accent: #6d9471;
-    --accent-text: #e3eadf;
-    --blue: #6d9471;
-    --mauve: #6d9471;
-    --surface0: #A1B99C;
-    --surface1: #6d9471;
-    --subtext0: #2B4E55;
-    --overlay0: #6d9471;
-    --red: #6B8276;
-    --yellow: #6d9471;
-    --maroon: #6B8276;
-    --btn: #2B4E55;
-    --btn-hover: #1d2837;
-    --btn-disabled: #6d9471;
-    --media-artist: #2B4E55;
-    --playback-time: #2B4E55;
-    --progress: #1d2837;
-    --source-bg: #6d9471;
-    --popup-bg: rgba(212, 221, 208, 0.7);
-    --media-bg: rgba(212, 221, 208, 0.6);
-    --gallery-bg-dark: rgba(212, 221, 208, 0.8);
-    --gallery-bg: rgba(212, 221, 208, 0.01);
-}
-
-/* ---------- THEME: Everforest Dark Soft ---------- */
-/*
-:root {
-    --background: #48584E;
-    --text: #D3C6AA;
-    --text-empty: #5D6B66;
-    --text-populated: #9AA79D;
-    --accent: #D3C6AA;
-    --accent-text: #48584E;
-    --blue: #D3C6AA;
-    --mauve: #D3C6AA;
-    --surface0: #5D6B66;
-    --surface1: #7A8478;
-    --subtext0: #9AA79D;
-    --overlay0: #7A8478;
-    --red: #E59875;
-    --yellow: #D3C6AA;
-    --maroon: #E59875;
-    --btn: #9AA79D;
-    --btn-hover: #D3C6AA;
-    --btn-disabled: #7A8478;
-    --media-artist: #9AA79D;
-    --playback-time: #9AA79D;
-    --progress: #D3C6AA;
-    --source-bg: #D3C6AA;
-    --popup-bg: rgba(72, 88, 78, 0.7);
-    --media-bg: rgba(72, 88, 78, 0.6);
-    --gallery-bg-dark: rgba(72, 88, 78, 0.8);
-    --gallery-bg: rgba(72, 88, 78, 0.01);
-}
-
-/* ---------- THEME: Monochrome ---------- */
+/* ---------- THEME: Monochrome dark ---------- */
 /*
 :root {
     --background: #18181b;
@@ -378,7 +286,7 @@
 /* ---------- THEME: Monochrome Light ---------- */
 /*
 :root {
-    --background: #e5e7eb;
+    --background: #cdd0d4;
     --text: #18181b;
     --text-empty: #a4a4a4;
     --text-populated: #4B565C;
@@ -406,76 +314,14 @@
     --gallery-bg: rgba(229, 231, 235, 0.01);
 }
 
-/* ---------- THEME: Monochrome Accent Dark ---------- */
-/*
-:root {
-    --background: #18181b;
-    --text: #e5e7eb;
-    --text-empty: #3f3f42;
-    --text-populated: #E5E7EB;
-    --accent: var(--yasb-accent);
-    --accent-text: #18181b;
-    --blue: var(--yasb-accent);
-    --mauve: var(--yasb-accent);
-    --surface0: #3f3f42;
-    --surface1: var(--yasb-accent);
-    --subtext0: #E5E7EB;
-    --overlay0: var(--yasb-accent);
-    --red: #e5e7eb;
-    --yellow: var(--yasb-accent);
-    --maroon: #e5e7eb;
-    --btn: #E5E7EB;
-    --btn-hover: #e5e7eb;
-    --btn-disabled: var(--yasb-accent);
-    --media-artist: #E5E7EB;
-    --playback-time: #E5E7EB;
-    --progress: #e5e7eb;
-    --source-bg: var(--yasb-accent);
-    --popup-bg: rgba(24, 24, 27, 0.7);
-    --media-bg: rgba(24, 24, 27, 0.6);
-    --gallery-bg-dark: rgba(24, 24, 27, 0.8);
-    --gallery-bg: rgba(24, 24, 27, 0.01);
-}
-
-/* ---------- THEME: Monochrome Accent Light ---------- */
-/*
-:root {
-    --background: #e5e7eb;
-    --text: #18181b;
-    --text-empty: #a4a4a4;
-    --text-populated: #4B565C;
-    --accent: var(--yasb-accent-dark2);
-    --accent-text: #e5e7eb;
-    --blue: var(--yasb-accent-dark2);
-    --mauve: var(--yasb-accent-dark2);
-    --surface0: #a4a4a4;
-    --surface1: var(--yasb-accent-light1);
-    --subtext0: #4B565C;
-    --overlay0: var(--yasb-accent-light1);
-    --red: #18181b;
-    --yellow: var(--yasb-accent-dark2);
-    --maroon: #18181b;
-    --btn: #4B565C;
-    --btn-hover: #18181b;
-    --btn-disabled: var(--yasb-accent-light1);
-    --media-artist: #4B565C;
-    --playback-time: #4B565C;
-    --progress: #18181b;
-    --source-bg: var(--yasb-accent-dark2);
-    --popup-bg: rgba(229, 231, 235, 0.7);
-    --media-bg: rgba(229, 231, 235, 0.6);
-    --gallery-bg-dark: rgba(229, 231, 235, 0.8);
-    --gallery-bg: rgba(229, 231, 235, 0.01);
-}
-
 /* ---------- THEME: Everforest Dark ---------- */
 /*
 :root {
-    --background: #2E383C;
+    --background: #323d43;
     --text: #D3C6AA;
     --text-empty: #374145;
-    --text-populated: #859289;
-    --accent: #D3C6AA;
+    --text-populated: #659273;
+    --accent: #7cac8f;
     --accent-text: #2E383C;
     --blue: #D3C6AA;
     --mauve: #D3C6AA;
@@ -534,6 +380,37 @@
 /*
 :root {
     --background: #1F1F28;
+    --text: #DCD7BA;
+    --text-empty: #727169;
+    --text-populated: #C8C093;
+    --accent: #C8C093;
+    --accent-text: #1F1F28;
+    --blue: #C8C093;
+    --mauve: #C8C093;
+    --surface0: #727169;
+    --surface1: #76946A;
+    --subtext0: #C8C093;
+    --overlay0: #76946A;
+    --red: #C34043;
+    --yellow: #C8C093;
+    --maroon: #C34043;
+    --btn: #C8C093;
+    --btn-hover: #DCD7BA;
+    --btn-disabled: #76946A;
+    --media-artist: #C8C093;
+    --playback-time: #C8C093;
+    --progress: #DCD7BA;
+    --source-bg: #C8C093;
+    --popup-bg: rgba(31, 31, 40, 0.7);
+    --media-bg: rgba(31, 31, 40, 0.6);
+    --gallery-bg-dark: rgba(31, 31, 40, 0.8);
+    --gallery-bg: rgba(31, 31, 40, 0.01);
+}
+
+/* ---------- THEME: Kanagawa black background---------- */
+/*
+:root {
+    --background: #000000;
     --text: #DCD7BA;
     --text-empty: #727169;
     --text-populated: #C8C093;
@@ -753,7 +630,7 @@
     border: none;
     color: var(--text);
     font-size: 14px;
-    font-family: "JetBrainsMono NerdFont";
+    font-family: "JetBrainsMono NFP";
     font-weight: 600;
     padding: 4px 0;
 }
@@ -767,7 +644,7 @@
     margin-right: 4px;
     font-size: 12px;
     font-weight: 800;
-    font-family: "JetBrainsMono NerdFont";
+    font-family: "JetBrainsMono NFP";
     max-height: 26px;
 }
 
@@ -778,20 +655,20 @@
 }
 .quick-launch-popup .results-list-view {
     font-size: 13px;
-    font-family: "JetBrainsMono NerdFont";
+    font-family: "JetBrainsMono NFP";
     font-weight: 800;
     color: var(--text);
 }
 .quick-launch-popup .results-list-view .description {
     color: var(--subtext0);
     font-size: 11px;
-    font-family: "JetBrainsMono NerdFont";
+    font-family: "JetBrainsMono NFP";
     font-weight: 600;
 }
 .quick-launch-popup .results-list-view .separator {
     color: var(--overlay0);
-    font-size: 11px;
-    font-family: "JetBrainsMono NerdFont";
+    font-size: 13px;
+    font-family: "JetBrainsMono NFP";
     font-weight: 600;
     padding: 4px 0 4px 12px;
 }
@@ -805,7 +682,7 @@
 }
 .quick-launch-popup .results-empty-text {
     font-size: 20px;
-    font-family: "JetBrainsMono NerdFont";
+    font-family: "JetBrainsMono NFP";
     color: var(--text);
     padding-top: 8px;
 }
@@ -816,10 +693,10 @@
     border-left: 1px solid var(--surface0);
 }
 .quick-launch-popup .preview .preview-text {
-    font-size: 12px;
+    font-size: 13px;
     color: var(--subtext0);
     padding: 8px 12px;
-    font-family: "JetBrainsMono NerdFont";
+    font-family: "JetBrainsMono NFP";
     background-color: rgba(255, 255, 255, 0.03);
     border: none;
 }
@@ -830,20 +707,20 @@
 .quick-launch-popup .preview .preview-meta {
     padding: 6px 12px;
     border-top: 1px solid var(--surface0);
-    font-family: "JetBrainsMono NerdFont";
+    font-family: "JetBrainsMono NFP";
 }
 .quick-launch-popup .preview .preview-meta .preview-title {
     font-size: 13px;
     font-weight: 800;
     color: var(--text);
-    font-family: "JetBrainsMono NerdFont";
+    font-family: "JetBrainsMono NFP";
     margin-bottom: 10px;
     margin-left: -2px;
 }
 .quick-launch-popup .preview .preview-meta .preview-subtitle {
-    font-size: 11px;
+    font-size: 13px;
     color: var(--subtext0);
-    font-family: "JetBrainsMono NerdFont";
+    font-family: "JetBrainsMono NFP";
     padding-bottom: 1px;
 }
 .weather-widget,
