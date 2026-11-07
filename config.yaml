@@ -31,14 +31,14 @@ bars:
       bottom: 0
       right: 0
     widgets:
-      left: ["clock", "komorebi_workspaces", "quick_launch"]
+      left: ["clock" , "lines", "komorebi_active_layout", "lines", "komorebi_workspaces", "quick_launch"]
       center: ["media", "cava"]
-      right: ["wifi", "wallpapers", "weather", "volume"]
+      right: ["volume", "lines", "wifi", "wallpapers",  "lines", "power_menu"]
 widgets:
   clock:
     type: "yasb.clock.ClockWidget"
     options:
-      label: "{%H:%M:%S}  |"
+      label: "{%H:%M:%S} "
       timezones: []
       callbacks:
         on_left: "do_nothing"
@@ -51,6 +51,41 @@ widgets:
       label_workspace_active_btn: "{index}"
       label_workspace_populated_btn: "{index}"
       hide_empty_workspaces: true
+  komorebi_active_layout:
+    type: "komorebi.active_layout.ActiveLayoutWidget"
+    options:
+      hide_if_offline: true
+      label: "{layout_name}"
+      layouts: ['bsp', 'columns', 'rows', 'grid', 'vertical_stack', 'horizontal_stack', 'ultrawide_vertical_stack','right_main_vertical_stack']
+      layout_icons:
+        bsp: "\uebeb"
+        columns: "\uebf7"
+        rows: "\uec01"
+        grid: "\udb81\udf58"
+        scrolling: "\uebf7"
+        vertical_stack: "\uebee"
+        horizontal_stack: "\uebf0"
+        ultrawide_vertical_stack: "\uebee"
+        right_main_vertical_stack: "\uebf1"
+        monocle: "\uf06f"
+        maximized: "\uf06f"
+        floating: "\uf2d2"
+        paused: "\udb83\udf89"
+        tiling: "\udb81\ude40"
+      callbacks:
+        on_left: 'toggle_layout_menu'
+        on_middle: 'next_layout'
+        on_right: 'prev_layout'
+      layout_menu:
+        blur: false
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "System"
+        alignment: "left"
+        direction: "up"
+        offset_top: 5
+        offset_left: 0
+        show_layout_icons: true    
   volume:
     type: "yasb.volume.VolumeWidget"
     options:
@@ -70,8 +105,8 @@ widgets:
         on_middle: do_nothing
         on_right: do_nothing
       max_field_size:
-        label: 45
-        label_alt: 45
+        label: 23
+        label_alt: 23
       show_thumbnail: false
       controls_only: false
       controls_left: true
@@ -94,7 +129,7 @@ widgets:
         thumbnail_corner_radius: 20
         thumbnail_size: 100
         max_title_size: 100
-        max_artist_size: 80
+        max_artist_size: 50
         show_volume_slider: false
   wallpapers:
     type: yasb.wallpapers.WallpapersWidget
@@ -103,13 +138,14 @@ widgets:
       tooltip: true
       image_path: "C:\\Users\\DELL\\.config\\Wallpapers"
       change_automatically: false
+      update_interval: 60
       engine:
         enabled: true
-        animation: circle
+        animation: circle #split/diamond/slide_top/circle
       gallery:
-        image_width: 330
-        image_corner_radius: 6
-        type: "magnified" #default/magnified/strip/slide
+        image_width: 300
+        image_corner_radius: 6 #only usable in default/slide/magnified orientation
+        type: "slide" #default/magnified/strip/slide
         orientation: "landscape" #landscape/portrait
         accent_color: "#ffffff" #u chan change to any color u like
       callbacks:
@@ -120,28 +156,6 @@ widgets:
         - keys: "ctrl+alt+w"
           action: "toggle_gallery"
           screen: "primary" #active/cursor/primary
-  weather:
-    type: "yasb.weather.WeatherWidget"
-    options:
-      label: "<span> {icon} </span> {temp}"
-      label_alt: "<span> {icon} </span> {location}: Min {min_temp}, Max {max_temp}, Humidity {humidity}"
-      api_key: 'f59a8bfa9e6f411e9bf150801260307'
-      update_interval: 600 #Update interval in seconds, Min 600
-      hide_decimal: true
-      location: "Pacifica, ARG" #Los Angeles, CA, USA
-      callbacks:
-        on_left: "toggle_label"
-      icons:
-        sunnyDay: "\udb81\udd9a"
-        clearNight: "\udb81\udd94"
-        cloudyDay: "\udb81\udd90"
-        cloudyNight: "\udb81\udd90"
-        rainyDay: "\udb81\udd96"
-        rainyNight: "\udb81\udd96"
-        snowyDay: "\udb81\udd98"
-        snowyNight: "\udb81\udd98"
-        blizzardDay: "\udb83\udf36"
-        default: "\udb81\udd90"
   quick_launch:
     type: "yasb.quick_launch.QuickLaunchWidget"
     options:
@@ -153,7 +167,7 @@ widgets:
       popup:
         width: 650
         height: 400
-        blur: false
+        blur: true
         round_corners: true
         round_corners_type: "normal"
         border_color: "system"
@@ -190,5 +204,51 @@ widgets:
       bar_spacing: 1
       bar_width: 3
       bar_type: "bars"
-      framerate: 60
+      framerate: 120
       hide_empty: true
+  lines:
+    type: "yasb.custom.CustomWidget"
+    options:
+      label: "\u007c"
+      label_alt: "\u007c"
+      class_name: "separator-widget"
+      callbacks:
+        on_left: "do_nothing"    
+  power_menu:
+    type: yasb.power_menu.PowerMenuWidget
+    options:
+      label: "<span>\uf011</span>"
+      uptime: false
+      show_user: true
+      menu_style: popup
+      popup:
+        blur: true
+        direction: up
+        round_corners: true
+        round_corners_type: normal
+        border_color: System
+        alignment: right
+        offset_left: 10
+      profile_image_size: 50
+      buttons:
+        lock:
+        - "\uDB80\uDF41"
+        - Lock
+        signout:
+        - "\uDB80\uDF43"
+        - Sign out
+        sleep:
+        - "\uDB82\uDD04"
+        - Sleep
+        hibernate:
+        - "\uDB82\uDD01"
+        - Hibernate
+        restart:
+        - "\uDB81\uDC53"
+        - Restart
+        shutdown:
+        - "\uDB82\uDD06"
+        - Shut Down
+        cancel:
+        - ''
+        - Cancel
