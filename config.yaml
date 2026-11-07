@@ -79,10 +79,10 @@ widgets:
       layout_menu:
         blur: false
         round_corners: true
-        round_corners_type: "normal"
-        border_color: "System"
-        alignment: "left"
-        direction: "up"
+        round_corners_type: "normal" ##normal / small
+        border_color: "System" ##System / none / Hex color
+        alignment: "left" ##left / right / center
+        direction: "down" ##up / down
         offset_top: 5
         offset_left: 0
         show_layout_icons: true    
@@ -105,8 +105,8 @@ widgets:
         on_middle: do_nothing
         on_right: do_nothing
       max_field_size:
-        label: 23
-        label_alt: 23
+        label: 40
+        label_alt: 40
       show_thumbnail: false
       controls_only: false
       controls_left: true
@@ -120,7 +120,7 @@ widgets:
         play: "\uE768"
         pause: "\uE769"
       media_menu:
-        blur: true
+        blur: false
         round_corners: true
         round_corners_type: normal
         border_color: system
@@ -145,7 +145,7 @@ widgets:
       gallery:
         image_width: 300
         image_corner_radius: 6 #only usable in default/slide/magnified orientation
-        type: "slide" #default/magnified/strip/slide
+        type: "magnified" #default/magnified/strip/slide
         orientation: "landscape" #landscape/portrait
         accent_color: "#ffffff" #u chan change to any color u like
       callbacks:
@@ -167,7 +167,7 @@ widgets:
       popup:
         width: 650
         height: 400
-        blur: true
+        blur: false
         round_corners: true
         round_corners_type: "normal"
         border_color: "system"
@@ -204,7 +204,7 @@ widgets:
       bar_spacing: 1
       bar_width: 3
       bar_type: "bars"
-      framerate: 120
+      framerate: 144
       hide_empty: true
   lines:
     type: "yasb.custom.CustomWidget"
@@ -222,12 +222,12 @@ widgets:
       show_user: true
       menu_style: popup
       popup:
-        blur: true
-        direction: up
+        blur: false
+        direction: down ##up / down
         round_corners: true
-        round_corners_type: normal
-        border_color: System
-        alignment: right
+        round_corners_type: normal  ## normal /small 
+        border_color: System  ##System / none / Hex color
+        alignment: right  ## left /right / center
         offset_left: 10
       profile_image_size: 50
       buttons:
