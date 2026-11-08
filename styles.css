@@ -6,6 +6,7 @@
     --font: "JetBrains Mono NFP";
 }
 /* ---------- THEME: pywal (ignore if not using pywal/pywal16) ---------- */
+/*
 :root {
     --text: var(--foreground);
     --text-empty: var(--color7);
@@ -35,7 +36,6 @@
     --accentText: var(--color0);
 }
 /* ---------- THEME: Catppuccin black background  ---------- */
-/*
 :root {
     --background: #000000;
     --text: #FFFFFF;
@@ -877,7 +877,7 @@
 .language-menu {
     background-color: var(--background);
     min-width: 300px;
-    border: 1px solid var(--border);
+    border: 1px solid var(--overlay0);
     border-radius: 6px ;
     color: var(--text);
 }
