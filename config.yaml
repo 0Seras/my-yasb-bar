@@ -31,9 +31,9 @@ bars:
       bottom: 0
       right: 0
     widgets:
-      left: ["clock" , "lines", "komorebi_active_layout", "komorebi_workspaces", "quick_launch"]
+      left: ["clock" , "lines", "komorebi_active_layout", "lines", "komorebi_workspaces", "quick_launch"]
       center: ["media", "cava"]
-      right: ["volume", "lines", "wifi", "wallpapers",  "lines", "power_menu"]
+      right: ["language","lines", "volume", "lines", "wifi", "wallpapers",  "lines", "power_menu"]
 widgets:
   clock:
     type: "yasb.clock.ClockWidget"
@@ -136,7 +136,7 @@ widgets:
     options:
       label: "<span> \uf4e5 </span>"
       tooltip: true
-      image_path: "C:\\Users\\0Seras\\.config\\Wallpapers"
+      image_path: "C:\\Users\\DELL\\.config\\Wallpapers"
       change_automatically: false
       update_interval: 60
       engine:
@@ -252,3 +252,24 @@ widgets:
         cancel:
         - ''
         - Cancel
+  language:
+    type: "yasb.language.LanguageWidget"
+    options:
+      label: "{lang[language_code]}"
+      label_alt: "{lang[full_name]}"
+      update_interval: 60
+      callbacks:
+        on_left: "toggle_menu"
+        on_middle: "do_nothing"
+        on_right: "toggle_label"
+      language_menu:
+        blur: false
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "system"
+        alignment: "right"
+        direction: "down"
+        offset_top: 5
+        offset_left: 0
+        show_layout_icon: true
+        layout_icon: "\udb80\udf0c"
