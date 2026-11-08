@@ -4,7 +4,6 @@
     --font: "JetBrains Mono NFP";
 }
 /* ---------- THEME: Catppuccin black background  ---------- */
-
 :root {
     --background: #000000;
     --text: #FFFFFF;
@@ -36,7 +35,7 @@
 /* ---------- THEME: transparent (nord color change it your self)  ---------- */
 /*
 :root {
-    --background: #202d47bd;
+    --background: #2E344099;
     --text: #d8dee9;
     --text-empty: #434c5e;
     --text-populated: #bdc2cd76;
@@ -126,37 +125,6 @@
     --gallery-bg: rgba(31, 31, 40, 0.01);
 }
 
-/* ---------- THEME: Kanagawa black background---------- */
-/*
-:root {
-    --background: #000000;
-    --text: #DCD7BA;
-    --text-empty: #727169;
-    --text-populated: #C8C093;
-    --accent: #C8C093;
-    --accent-text: #1F1F28;
-    --blue: #C8C093;
-    --mauve: #C8C093;
-    --surface0: #727169;
-    --surface1: #76946A;
-    --subtext0: #C8C093;
-    --overlay0: #76946A;
-    --red: #C34043;
-    --yellow: #C8C093;
-    --maroon: #C34043;
-    --btn: #C8C093;
-    --btn-hover: #DCD7BA;
-    --btn-disabled: #76946A;
-    --media-artist: #C8C093;
-    --playback-time: #C8C093;
-    --progress: #DCD7BA;
-    --source-bg: #C8C093;
-    --popup-bg: rgba(31, 31, 40, 0.7);
-    --media-bg: rgba(31, 31, 40, 0.7);
-    --gallery-bg-dark: rgba(31, 31, 40, 0.7);
-    --gallery-bg: rgba(31, 31, 40, 0.01);
-}
-
 /* ---------- THEME: Gruvbox Dark ---------- */
 /*
 :root {
@@ -219,99 +187,6 @@
     --gallery-bg: rgba(239, 241, 245, 0.01);
 }
 
-/* ---------- THEME: Catppuccin Frappé ---------- */
-/*
-:root {
-    --background: #303446;
-    --text: #c6d0f5;
-    --text-empty: #414559;
-    --text-populated: #a5adce;
-    --accent: #949cbb;
-    --accent-text: #414559;
-    --blue: #949cbb;
-    --mauve: #949cbb;
-    --surface0: #414559;
-    --surface1: #51576d;
-    --subtext0: #a5adce;
-    --overlay0: #51576d;
-    --red: #e78284;
-    --yellow: #949cbb;
-    --maroon: #e78284;
-    --btn: #a5adce;
-    --btn-hover: #c6d0f5;
-    --btn-disabled: #51576d;
-    --media-artist: #a5adce;
-    --playback-time: #a5adce;
-    --progress: #c6d0f5;
-    --source-bg: #949cbb;
-    --popup-bg: rgba(48, 52, 70, 0.7);
-    --media-bg: rgba(48, 52, 70, 0.7);
-    --gallery-bg-dark: rgba(48, 52, 70, 0.7);
-    --gallery-bg: rgba(48, 52, 70, 0.01);
-}
-
-/* ---------- THEME: Catppuccin Macchiato ---------- */
-/*
-:root {
-    --background: #24273a;
-    --text: #cad3f5;
-    --text-empty: #363a4f;
-    --text-populated: #a5adcb;
-    --accent: #939ab7;
-    --accent-text: #363a4f;
-    --blue: #939ab7;
-    --mauve: #939ab7;
-    --surface0: #363a4f;
-    --surface1: #494d64;
-    --subtext0: #a5adcb;
-    --overlay0: #494d64;
-    --red: #ed8796;
-    --yellow: #939ab7;
-    --maroon: #ed8796;
-    --btn: #a5adcb;
-    --btn-hover: #cad3f5;
-    --btn-disabled: #494d64;
-    --media-artist: #a5adcb;
-    --playback-time: #a5adcb;
-    --progress: #cad3f5;
-    --source-bg: #939ab7;
-    --popup-bg: rgba(36, 39, 58, 0.7);
-    --media-bg: rgba(36, 39, 58, 0.7);
-    --gallery-bg-dark: rgba(36, 39, 58, 0.7);
-    --gallery-bg: rgba(36, 39, 58, 0.01);
-}
-
-/* ---------- THEME: Catppuccin Mocha ---------- */
-/*
-:root {
-    --background: #1e1e2e;
-    --text: #cdd6f4;
-    --text-empty: #313244;
-    --text-populated: #a6adc8;
-    --accent: #9399b2;
-    --accent-text: #313244;
-    --blue: #9399b2;
-    --mauve: #9399b2;
-    --surface0: #313244;
-    --surface1: #45475a;
-    --subtext0: #a6adc8;
-    --overlay0: #45475a;
-    --red: #f38ba8;
-    --yellow: #9399b2;
-    --maroon: #f38ba8;
-    --btn: #a6adc8;
-    --btn-hover: #cdd6f4;
-    --btn-disabled: #45475a;
-    --media-artist: #a6adc8;
-    --playback-time: #a6adc8;
-    --progress: #cdd6f4;
-    --source-bg: #9399b2;
-    --popup-bg: rgba(30, 30, 46, 0.7);
-    --media-bg: rgba(30, 30, 46, 0.7);
-    --gallery-bg-dark: rgba(30, 30, 46, 0.7);
-    --gallery-bg: rgba(30, 30, 46, 0.01);
-}
-
 /* ---------- THEME: Monochrome dark ---------- */
 /*
 :root {
@@ -372,37 +247,6 @@
     --media-bg: rgba(26, 27, 38, 0.7);
     --gallery-bg-dark: rgba(26, 27, 38, 0.7);
     --gallery-bg: rgba(26, 27, 38, 0.01);
-}
-
-/* ---------- THEME: Monochrome Light ---------- */
-/*
-:root {
-    --background: #cdd0d4;
-    --text: #18181b;
-    --text-empty: #a4a4a4;
-    --text-populated: #4B565C;
-    --accent: #2f2f36;
-    --accent-text: #e5e7eb;
-    --blue: #2f2f36;
-    --mauve: #2f2f36;
-    --surface0: #a4a4a4;
-    --surface1: #919090;
-    --subtext0: #4B565C;
-    --overlay0: #919090;
-    --red: #18181b;
-    --yellow: #2f2f36;
-    --maroon: #18181b;
-    --btn: #4B565C;
-    --btn-hover: #18181b;
-    --btn-disabled: #919090;
-    --media-artist: #4B565C;
-    --playback-time: #4B565C;
-    --progress: #18181b;
-    --source-bg: #2f2f36;
-    --popup-bg: rgba(229, 231, 235, 0.7);
-    --media-bg: rgba(229, 231, 235, 0.7);
-    --gallery-bg-dark: rgba(229, 231, 235, 0.7);
-    --gallery-bg: rgba(229, 231, 235, 0.01);
 }
 
 /* ---------- THEME: Everforest Dark ---------- */
