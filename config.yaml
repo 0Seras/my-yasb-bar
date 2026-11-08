@@ -54,7 +54,7 @@ widgets:
   komorebi_active_layout:
     type: "komorebi.active_layout.ActiveLayoutWidget"
     options:
-      hide_if_offline: false
+      hide_if_offline: true
       label: "{layout_name}"
       layouts: ['bsp', 'columns', 'rows', 'grid', 'vertical_stack', 'horizontal_stack', 'ultrawide_vertical_stack','right_main_vertical_stack']
       layout_icons:
@@ -136,7 +136,7 @@ widgets:
     options:
       label: "<span> \uf4e5 </span>"
       tooltip: true
-      image_path: "C:\\Users\\DELL\\.config\\Wallpapers"
+      image_path: "C:\\Users\\0Seras\\.config\\Wallpapers"
       change_automatically: false
       update_interval: 60
       engine:
