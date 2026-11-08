@@ -31,7 +31,7 @@ bars:
       bottom: 0
       right: 0
     widgets:
-      left: ["clock" , "lines", "komorebi_active_layout", "lines", "komorebi_workspaces", "quick_launch"]
+      left: ["clock" , "lines", "komorebi_active_layout", "komorebi_workspaces", "quick_launch"]
       center: ["media", "cava"]
       right: ["volume", "lines", "wifi", "wallpapers",  "lines", "power_menu"]
 widgets:
@@ -54,7 +54,7 @@ widgets:
   komorebi_active_layout:
     type: "komorebi.active_layout.ActiveLayoutWidget"
     options:
-      hide_if_offline: true
+      hide_if_offline: false
       label: "{layout_name}"
       layouts: ['bsp', 'columns', 'rows', 'grid', 'vertical_stack', 'horizontal_stack', 'ultrawide_vertical_stack','right_main_vertical_stack']
       layout_icons:
