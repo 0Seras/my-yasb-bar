@@ -1,13 +1,45 @@
+@import "C:/Users/DELL/.cache/wal/colors.css";
+
 :root {
-    --border: var(--surface0);
+    --border: #313244;
     --radius: 0px;
     --font: "JetBrains Mono NFP";
 }
+/* ---------- THEME: pywal (ignore if not using pywal/pywal16) ---------- */
+:root {
+    --text: var(--foreground);
+    --text-empty: var(--color7);
+    --text-populated: var(--color7);
+    --accent: var(--color5);
+    --accent-text: var(--color0);
+    --blue: var(--color5);
+    --mauve: var(--color6);
+    --surface0: var(--color8);
+    --surface1: var(--color8);
+    --subtext0: var(--color7);
+    --overlay0: var(--trforeground);
+    --red: var(--color1);
+    --yellow: var(--color3);
+    --maroon: var(--color9);
+    --btn: var(--color7);
+    --btn-hover: var(--color6);
+    --btn-disabled: var(--color8);
+    --media-artist: var(--color7);
+    --playback-time: var(--color7);
+    --progress: var(--color5);
+    --source-bg: var(--color6);
+    --popup-bg: var(--trcolor0);
+    --media-bg: var(--trcolor0);
+    --gallery-bg-dark: var(--trcolor0);
+    --gallery-bg: var(--trcolor0);
+    --accentText: var(--color0);
+}
 /* ---------- THEME: Catppuccin black background  ---------- */
+/*
 :root {
     --background: #000000;
     --text: #FFFFFF;
-    --text-empty: #282828;
+    --text-empty: #282828; 
     --text-populated: #A0A0A0;
     --accent: #89B4FA;
     --accent-text: #000000;
@@ -31,36 +63,6 @@
     --media-bg: rgba(0, 0, 0, 0.7);
     --gallery-bg-dark: rgba(0, 0, 0, 0.7);
     --gallery-bg: rgba(0, 0, 0, 0.01);
-}
-/* ---------- THEME: transparent (nord color change it your self)  ---------- */
-/*
-:root {
-    --background: #2E344099;
-    --text: #d8dee9;
-    --text-empty: #434c5e;
-    --text-populated: #bdc2cd76;
-    --accent: #ebcb8b;
-    --accent-text: #2e3440;
-    --blue: #ebcb8b;
-    --mauve: #ebcb8b;
-    --surface0: #434c5e;
-    --surface1: #4c566a;
-    --subtext0: #bdc2cd76;
-    --overlay0: #4c566a;
-    --red: #bf616a;
-    --yellow: #ebcb8b;
-    --maroon: #bf616a;
-    --btn: #bdc2cd76;
-    --btn-hover: #d8dee9;
-    --btn-disabled: #4c566a;
-    --media-artist: #bdc2cd76;
-    --playback-time: #bdc2cd76;
-    --progress: #d8dee9;
-    --source-bg: #ebcb8b;
-    --popup-bg: rgba(46, 52, 64, 0.7);
-    --media-bg: rgba(44, 50, 62, 0.7);
-    --gallery-bg-dark: rgba(46, 52, 64, 0.7);
-    --gallery-bg: rgba(46, 52, 64, 0.01);
 }
 
 /* ---------- THEME: Nord ---------- */
